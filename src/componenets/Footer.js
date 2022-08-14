@@ -1,6 +1,8 @@
 import React from 'react'
 
  function Footer() {
+    const logo = require("../img/logo.png");
+
   return (
     <footer>
     <div className="container">
@@ -8,7 +10,7 @@ import React from 'react'
             <div className="col-md-5">
                 <div className="about-veno">
                     <div className="logo">
-                        <img src="img/footer_logo.png" alt="Venue Logo"/>
+                        <img src={logo} alt="Venue Logo"/>
                     </div>
                     <p>Mauris sit amet quam congue, pulvinar urna et, congue diam. Suspendisse eu lorem massa. Integer sit amet posuere tellustea dictumst.</p>
                     <ul className="social-icons">

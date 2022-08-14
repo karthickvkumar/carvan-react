@@ -3,10 +3,12 @@ import Footer from '../componenets/Footer';
 import Header from '../componenets/Header';
 
  function Home() {
+  
+  const homePage = require("../img/homepage-banner-image-1920x700.jpg");
   return (
     <div>
       <Header></Header>
-      <section class="banner" id="top" style={{backgroundImage: "url(img/homepage-banner-image-1920x700.jpg)"}}>
+      <section className="banner" id="top" style={{backgroundImage: `url(${homePage})`}}>
         <div className ="container">
             <div className ="row">
                 <div className ="col-md-10 col-md-offset-1">
@@ -39,7 +41,7 @@ import Header from '../componenets/Header';
                         </div>
                     </div>
                     <div className ="col-md-5">
-                        <img src="img/about-1-720x480.jpg" className ="img-fluid" alt=""/>
+                        <img src={require("../img/about-1-720x480.jpg")} className="img-fluid user-img" alt=""/>
                     </div>
                 </div>
             </div>
@@ -60,7 +62,7 @@ import Header from '../componenets/Header';
                         <div className ="featured-item">
                             <div className ="thumb">
                                 <div className ="thumb-img">
-                                    <img src="img/product-1-720x480.jpg" alt=""/>
+                                    <img src={require("../img/product-1-720x480.jpg")} alt=""/>
                                 </div>
                                 <div className ="overlay-content">
                                   <strong><i className ="fa fa-dashboard"></i> 130 000km</strong> &nbsp;&nbsp;&nbsp;&nbsp;
@@ -88,7 +90,7 @@ import Header from '../componenets/Header';
                         <div className ="featured-item">
                             <div className ="thumb">
                                 <div className ="thumb-img">
-                                    <img src="img/product-2-720x480.jpg" alt=""/>
+                                    <img src={require("../img/product-2-720x480.jpg")} alt=""/>
                                 </div>
                                 <div className ="overlay-content">
                                   <strong><i className ="fa fa-dashboard"></i> 130 000km</strong> &nbsp;&nbsp;&nbsp;&nbsp;
@@ -116,7 +118,7 @@ import Header from '../componenets/Header';
                         <div className ="featured-item">
                             <div className ="thumb">
                                 <div className ="thumb-img">
-                                    <img src="img/product-3-720x480.jpg" alt=""/>
+                                    <img src={require("../img/product-3-720x480.jpg")} alt=""/>
                                 </div>
                                 <div className ="overlay-content">
                                   <strong><i className ="fa fa-dashboard"></i> 130 000km</strong> &nbsp;&nbsp;&nbsp;&nbsp;
@@ -144,7 +146,7 @@ import Header from '../componenets/Header';
                         <div className ="featured-item">
                             <div className ="thumb">
                                 <div className ="thumb-img">
-                                    <img src="img/product-4-720x480.jpg" alt=""/>
+                                    <img src={require("../img/product-4-720x480.jpg")} alt=""/>
                                 </div>
                                 <div className ="overlay-content">
                                   <strong><i className ="fa fa-dashboard"></i> 130 000km</strong> &nbsp;&nbsp;&nbsp;&nbsp;
@@ -172,7 +174,7 @@ import Header from '../componenets/Header';
                         <div className ="featured-item">
                             <div className ="thumb">
                                 <div className ="thumb-img">
-                                    <img src="img/product-5-720x480.jpg" alt=""/>
+                                    <img src={require("../img/product-5-720x480.jpg")} alt=""/>
                                 </div>
                                 <div className ="overlay-content">
                                   <strong><i className ="fa fa-dashboard"></i> 130 000km</strong> &nbsp;&nbsp;&nbsp;&nbsp;
@@ -200,7 +202,7 @@ import Header from '../componenets/Header';
                         <div className ="featured-item">
                             <div className ="thumb">
                                 <div className ="thumb-img">
-                                    <img src="img/product-6-720x480.jpg" alt=""/>
+                                    <img src={require("../img/product-6-720x480.jpg")} alt=""/>
                                 </div>
                                 <div className ="overlay-content">
                                   <strong><i className ="fa fa-dashboard"></i> 130 000km</strong> &nbsp;&nbsp;&nbsp;&nbsp;
@@ -242,7 +244,7 @@ import Header from '../componenets/Header';
                         <div className ="featured-item">
                             <div className ="thumb">
                                 <div className ="thumb-img">
-                                    <img src="img/blog-1-720x480.jpg" alt=""/>
+                                    <img src={require("../img/blog-1-720x480.jpg")} alt=""/>
                                 </div>
 
                                 <div className ="overlay-content">
@@ -268,7 +270,7 @@ import Header from '../componenets/Header';
                         <div className ="featured-item">
                             <div className ="thumb">
                                 <div className ="thumb-img">
-                                    <img src="img/blog-2-720x480.jpg" alt=""/>
+                                    <img src={require("../img/blog-2-720x480.jpg")} alt=""/>
                                 </div>
 
                                 <div className ="overlay-content">
@@ -294,7 +296,7 @@ import Header from '../componenets/Header';
                         <div className ="featured-item">
                             <div className ="thumb">
                                 <div className ="thumb-img">
-                                    <img src="img/blog-3-720x480.jpg" alt=""/>
+                                    <img src={require("../img/blog-3-720x480.jpg")} alt=""/>
                                 </div>
 
                                 <div className ="overlay-content">
@@ -310,7 +312,7 @@ import Header from '../componenets/Header';
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim consectetur assumenda nam facere voluptatibus totam veritatis. </p>
 
                                 <div className ="text-button">
-                                    <a href="blog-details.html">Read More</a>
+                                    <a href="#">Read More</a>
                                 </div>
                             </div>
                         </div>
@@ -330,108 +332,8 @@ import Header from '../componenets/Header';
                       
 
                       <div className ="blue-button">
-                        <a href="contact.html">Talk to us</a>
+                        <a href="#">Talk to us</a>
                       </div>
-                </div>
-            </div>
-        </section>
-
-        <section className ="popular-places" id="popular">
-            <div className ="container">
-                <div className ="row">
-                    <div className ="col-md-12">
-                        <div className ="section-heading">
-                            <span>Testimonials</span>
-                            <h2>Lorem ipsum dolor sit amet</h2>
-                        </div>
-                    </div> 
-                </div> 
-
-                <div className ="owl-carousel owl-theme">
-                    <div className ="item popular-item">
-                        <div className ="thumb">
-                            <img src="img/popular_item_1.jpg" alt=""/>
-                            <div className ="text-content">
-                                <h4>John Doe</h4>
-                                <span>"Lorem ipsum dolor sit amet, consectetur an adipisicing elit. Itaque, corporis nulla at quia quaerat."</span>
-                            </div>
-                            <div className ="plus-button">
-                                <a href="testimonials.html"><i className ="fa fa-plus"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div className ="item popular-item">
-                        <div className ="thumb">
-                            <img src="img/popular_item_2.jpg" alt=""/>
-                            <div className ="text-content">
-                                <h4>John Doe</h4>
-                                <span>"Lorem ipsum dolor sit amet, consectetur an adipisicing elit. Itaque, corporis nulla at quia quaerat."</span>
-                            </div>
-                            <div className ="plus-button">
-                                <a href="testimonials.html"><i className ="fa fa-plus"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div className ="item popular-item">
-                        <div className ="thumb">
-                            <img src="img/popular_item_3.jpg" alt=""/>
-                            <div className ="text-content">
-                                <h4>John Doe</h4>
-                                <span>"Lorem ipsum dolor sit amet, consectetur an adipisicing elit. Itaque, corporis nulla at quia quaerat."</span>
-                            </div>
-                            <div className ="plus-button">
-                                <a href="testimonials.html"><i className ="fa fa-plus"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div className ="item popular-item">
-                        <div className ="thumb">
-                            <img src="img/popular_item_4.jpg" alt=""/>
-                            <div className ="text-content">
-                                <h4>John Doe</h4>
-                                <span>"Lorem ipsum dolor sit amet, consectetur an adipisicing elit. Itaque, corporis nulla at quia quaerat."</span>
-                            </div>
-                            <div className ="plus-button">
-                                <a href="testimonials.html"><i className ="fa fa-plus"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div className ="item popular-item">
-                        <div className ="thumb">
-                            <img src="img/popular_item_5.jpg" alt=""/>
-                            <div className ="text-content">
-                                <h4>John Doe</h4>
-                                <span>"Lorem ipsum dolor sit amet, consectetur an adipisicing elit. Itaque, corporis nulla at quia quaerat."</span>
-                            </div>
-                            <div className ="plus-button">
-                                <a href="testimonials.html"><i className ="fa fa-plus"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div className ="item popular-item">
-                        <div className ="thumb">
-                            <img src="img/popular_item_1.jpg" alt=""/>
-                            <div className ="text-content">
-                                <h4>John Doe</h4>
-                                <span>"Lorem ipsum dolor sit amet, consectetur an adipisicing elit. Itaque, corporis nulla at quia quaerat."</span>
-                            </div>
-                            <div className ="plus-button">
-                                <a href="testimonials.html"><i className ="fa fa-plus"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div className ="item popular-item">
-                        <div className ="thumb">
-                            <img src="img/popular_item_2.jpg" alt=""/>
-                            <div className ="text-content">
-                                <h4>John Doe</h4>
-                                <span>"Lorem ipsum dolor sit amet, consectetur an adipisicing elit. Itaque, corporis nulla at quia quaerat."</span>
-                            </div>
-                            <div className ="plus-button">
-                                <a href="testimonials.html"><i class="fa fa-plus"></i></a>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>

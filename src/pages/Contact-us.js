@@ -3,10 +3,12 @@ import Footer from '../componenets/Footer';
 import Header from '../componenets/Header';
 
  function ContactUs() {
+    const bannerImg = require("../img/banner-image-3-1920x300.jpg");
+
   return (
     <div>
       <Header></Header>
-      <section class="banner banner-secondary" id="top" style={{backgroundImage : "url(img/banner-image-3-1920x300.jpg)"}}>
+      <section className="banner banner-secondary" id="top" style={{backgroundImage : `url(${bannerImg})`}}>
         <div className ="container">
             <div className ="row">
                 <div className ="col-md-10 col-md-offset-1">
@@ -34,7 +36,7 @@ import Header from '../componenets/Header';
                                     </div>
                                      <div className ="col-md-6">
                                       <fieldset>
-                                        <input name="subject" type="text" class="form-control" id="subject" placeholder="Subject..." required=""/>
+                                        <input name="subject" type="text" className="form-control" id="subject" placeholder="Subject..." required=""/>
                                       </fieldset>
                                     </div>
                                     <div className ="col-md-12">
@@ -69,78 +71,6 @@ import Header from '../componenets/Header';
                             </div>
                         </div>
                     </div>      
-                </div>
-            </div>
-        </section>
-
-        <section className ="popular-places" id="popular">
-            <div className ="container">
-                <div className ="row">
-                    <div className ="col-md-12">
-                        <div className ="section-heading">
-                            <span>Team</span>
-                            <h2>Lorem ipsum dolor sit amet</h2>
-                        </div>
-                    </div> 
-                </div> 
-
-                <div className ="owl-carousel owl-theme">
-                    <div className ="item popular-item">
-                        <div className ="thumb">
-                            <div className ="thumb-img">
-                                <img src="img/team-image-1-646x680.jpg" alt=""/>
-                            </div>
-                            <div className ="text-content">
-                                <h4>John Doe</h4>
-                                <span>CEO</span>
-                            </div>
-                            <div className ="plus-button">
-                                <a href="team.html"><i className ="fa fa-plus"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div className ="item popular-item">
-                        <div className ="thumb">
-                            <div className ="thumb-img">
-                                <img src="img/team-image-2-646x680.jpg" alt=""/>
-                            </div>
-                            <div className ="text-content">
-                                <h4>Jane Doe</h4>
-                                <span>Marketing Manager</span>
-                            </div>
-                            <div className ="plus-button">
-                                <a href="team.html"><i class="fa fa-plus"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div className ="item popular-item">
-                        <div className ="thumb">
-                            <div className ="thumb-img">
-                                <img src="img/team-image-3-646x680.jpg" alt=""/>
-                            </div>
-                            <div className ="text-content">
-                                <h4>Paula Jeorge</h4>
-                                <span>Customer Service</span>
-                            </div>
-                            <div className ="plus-button">
-                                <a href="team.html"><i class="fa fa-plus"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div className ="item popular-item">
-                        <div className ="thumb">
-                            <div className ="thumb-img">
-                                <img src="img/team-image-4-646x680.jpg" alt=""/>
-                            </div>
-                            <div className ="text-content">
-                                <h4>Dan Blatan</h4>
-                                <span>Customer Service</span>
-                            </div>
-                            <div className ="plus-button">
-                                <a href="team.html"><i className ="fa fa-plus"></i></a>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>

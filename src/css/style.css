@@ -131,6 +131,7 @@ section {
 
 #header .logo {
   float: left;
+  cursor: pointer;
 }
 
 #header .logo img {
@@ -171,6 +172,10 @@ section {
   font-size: 15px;
   font-weight: 400;
   transition: all 0.5s;
+}
+
+.active{
+  color: #4883ff !important;
 }
 
 #primary-nav .active > a,
@@ -1329,4 +1334,8 @@ main > section {
   
 main > section:nth-child(even) { 
   background: #f8f8f8; 
+}
+
+.user-img{
+  width: 350px;
 }
