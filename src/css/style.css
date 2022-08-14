@@ -1337,5 +1337,5 @@ main > section:nth-child(even) {
 }
 
 .user-img{
-  width: 350px;
+  max-width: 100%;
 }
