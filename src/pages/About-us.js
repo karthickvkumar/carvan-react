@@ -3,7 +3,7 @@ import Footer from '../componenets/Footer';
 import Header from '../componenets/Header';
 
 function AboutUs() {
-  const bannerImg = require("../img/banner-image-3-1920x300.jpg");
+  const bannerImg = "https://www.nttdata.com/global/en/-/media/nttdataglobal/1_images/about-us/about-t-hero_d.jpg?h=894&la=en&w=2800&hash=E52961AAC934758C1334C1C916ECC7BB4A709E49";
 
   return (
     <div>

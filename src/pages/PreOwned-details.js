@@ -25,110 +25,110 @@ const PreOwnedDetails = () => {
             <div className ="container">
                 <div className ="row">
                     
-                <main>
-        <section class="featured-places">
-            <div class="container">
-               <div class="row">
-                  <div class="col-md-6 col-xs-12">
+        <main>
+        <section className="featured-places">
+            <div className="container">
+               <div className="row">
+                  <div className="col-md-6 col-xs-12">
                     <div>
-                      <img src={require("../img/product-1-720x480.jpg")} alt="" class="img-responsive wc-image"/>
+                      <img src={require("../img/product-1-720x480.jpg")} alt="" className="img-responsive wc-image"/>
                     </div>
                     
                   </div>
 
-                  <div class="col-md-6 col-xs-12">
-                    <form action="#" method="post" class="form">
-                      <h2><small><del> $11999.00</del></small><strong class="text-primary">$11779.00</strong></h2>
+                  <div className="col-md-6 col-xs-12">
+                    <form action="#" method="post" className="form">
+                      <h2><small><del className='brand-info'> $11999.00</del></small><strong className="text-primary brand-info">$11779.00</strong></h2>
 
                       <br/> 
 
-                      <ul class="list-group list-group-flush">
-                       <li class="list-group-item">
-                            <div class="clearfix">
-                                 <span class="pull-left">Type</span>
+                      <ul className="list-group list-group-flush">
+                       <li className="list-group-item">
+                            <div className="clearfix">
+                                 <span className="pull-left">Type</span>
 
-                                 <strong class="pull-right">Used vehicle</strong>
+                                 <strong className="pull-right">Used vehicle</strong>
                             </div>
                        </li>
 
-                       <li class="list-group-item">
-                            <div class="clearfix">
-                                 <span class="pull-left"> Model</span>
+                       <li className="list-group-item">
+                            <div className="clearfix">
+                                 <span className="pull-left"> Model</span>
 
-                                 <strong class="pull-right">Lorem ipsum dolor sit</strong>
+                                 <strong className="pull-right">Lorem ipsum dolor sit</strong>
                             </div>
                        </li>
 
-                       <li class="list-group-item">
-                            <div class="clearfix">
-                                 <span class="pull-left">First registration</span>
+                       <li className="list-group-item">
+                            <div className="clearfix">
+                                 <span className="pull-left">First registration</span>
 
-                                 <strong class="pull-right">05/2010</strong>
+                                 <strong className="pull-right">05/2010</strong>
                             </div>
                        </li>
 
-                       <li class="list-group-item">
-                            <div class="clearfix">
-                                 <span class="pull-left">Mileage</span>
+                       <li className="list-group-item">
+                            <div className="clearfix">
+                                 <span className="pull-left">Mileage</span>
 
-                                 <strong class="pull-right">5000 km</strong>
+                                 <strong className="pull-right">5000 km</strong>
                             </div>
                        </li>
 
-                       <li class="list-group-item">
-                            <div class="clearfix">
-                                 <span class="pull-left">Fuel</span>
+                       <li className="list-group-item">
+                            <div className="clearfix">
+                                 <span className="pull-left">Fuel</span>
 
-                                 <strong class="pull-right">Diesel</strong>
+                                 <strong className="pull-right">Diesel</strong>
                             </div>
                        </li>
 
-                       <li class="list-group-item">
-                            <div class="clearfix">
-                                 <span class="pull-left">Engine size</span>
+                       <li className="list-group-item">
+                            <div className="clearfix">
+                                 <span className="pull-left">Engine size</span>
 
-                                 <strong class="pull-right">1800 cc</strong>
+                                 <strong className="pull-right">1800 cc</strong>
                             </div>
                        </li>
 
-                       <li class="list-group-item">
-                            <div class="clearfix">
-                                 <span class="pull-left">Power</span>
+                       <li className="list-group-item">
+                            <div className="clearfix">
+                                 <span className="pull-left">Power</span>
 
-                                 <strong class="pull-right">85 hp</strong>
+                                 <strong className="pull-right">85 hp</strong>
                             </div>
                        </li>
 
 
-                       <li class="list-group-item">
-                            <div class="clearfix">
-                                 <span class="pull-left">Gearbox</span>
+                       <li className="list-group-item">
+                            <div className="clearfix">
+                                 <span className="pull-left">Gearbox</span>
 
-                                 <strong class="pull-right">Manual</strong>
+                                 <strong className="pull-right">Manual</strong>
                             </div>
                        </li>
 
-                       <li class="list-group-item">
-                            <div class="clearfix">
-                                 <span class="pull-left">Number of seats</span>
+                       <li className="list-group-item">
+                            <div className="clearfix">
+                                 <span className="pull-left">Number of seats</span>
 
-                                 <strong class="pull-right">4</strong>
+                                 <strong className="pull-right">4</strong>
                             </div>
                        </li>
 
-                       <li class="list-group-item">
-                            <div class="clearfix">
-                                 <span class="pull-left">Doors</span>
+                       <li className="list-group-item">
+                            <div className="clearfix">
+                                 <span className="pull-left">Doors</span>
 
-                                 <strong class="pull-right">2/3</strong>
+                                 <strong className="pull-right">2/3</strong>
                             </div>
                        </li>
 
-                       <li class="list-group-item">
-                            <div class="clearfix">
-                                 <span class="pull-left">Color</span>
+                       <li className="list-group-item">
+                            <div className="clearfix">
+                                 <span className="pull-left">Color</span>
 
-                                 <strong class="pull-right">Black</strong>
+                                 <strong className="pull-right">Black</strong>
                             </div>
                        </li>
                     </ul>
@@ -136,34 +136,34 @@ const PreOwnedDetails = () => {
 
                     
 
-                      <div class="accordions">
-                            <ul class="accordion">
+                      <div className="accordions">
+                            <ul className="accordion">
                                 <li>
-                                    <a class="accordion-trigger">Vehicle Extras</a>
+                                    <a className="accordion-trigger">Vehicle Extras</a>
                                     
-                                    <div class="accordion-content" style={{display: 'block'}}>
-                                        <div class="row">
-                                            <div class="col-sm-6 col-xs-12">
+                                    <div className="accordion-content" style={{display: 'block'}}>
+                                        <div className="row">
+                                            <div className="col-sm-6 col-xs-12">
                                                 <p>ABS</p>
                                             </div>
 
-                                            <div class="col-sm-6 col-xs-12">
+                                            <div className="col-sm-6 col-xs-12">
                                                 <p>Leather seats</p>
                                             </div>
 
-                                            <div class="col-sm-6 col-xs-12">
+                                            <div className="col-sm-6 col-xs-12">
                                                 <p>Power Assisted Steering</p>
                                             </div>
 
-                                            <div class="col-sm-6 col-xs-12">
+                                            <div className="col-sm-6 col-xs-12">
                                                 <p>Electric heated seats</p>
                                             </div>
 
-                                            <div class="col-sm-6 col-xs-12">
+                                            <div className="col-sm-6 col-xs-12">
                                                 <p>New HU and AU</p>
                                             </div>
 
-                                            <div class="col-sm-6 col-xs-12">
+                                            <div className="col-sm-6 col-xs-12">
                                                 <p>Xenon headlights</p>
                                             </div>
                                         </div>
@@ -171,9 +171,9 @@ const PreOwnedDetails = () => {
                                 </li>
                                 
                                 <li>
-                                    <a class="accordion-trigger">Contact Details</a>
+                                    <a className="accordion-trigger">Contact Details</a>
 
-                                    <div class="accordion-content" style={{display: 'block'}}>
+                                    <div className="accordion-content" style={{display: 'block'}}>
 
                                       <p>
                                         <span>Name</span>
@@ -223,7 +223,7 @@ const PreOwnedDetails = () => {
                 </div>
             </div>
         </section>
-            <div class="blue-button align-center">
+            <div className="blue-button align-center">
           <a href="#">Back to PreOwned Cars</a>
         </div>
     </main>

@@ -4,7 +4,8 @@ import Footer from '../componenets/Footer';
 import PreOwned from '../componenets/PreOwned';
 
  function PreownedCars() {
-  const bannerImg = require("../img/blog-image-fullscren-1-1920x700.jpg");
+  const bannerImg = "https://di-uploads-pod13.dealerinspire.com/suntrupdirect/uploads/2020/03/Handing-Off-Keys-at-Dealership_206915946.jpg";
+  
   const data = {
     cars : [
       {

@@ -4,7 +4,7 @@ import Footer from '../componenets/Footer';
 import Header from '../componenets/Header';
 
 function Brands() {
-  const bannerImg = require("../img/blog-image-fullscren-1-1920x700.jpg");
+  const bannerImg = "https://www.wardsauto.com/sites/wardsauto.com/files/styles/article_featured_retina/public/Connected-car%20Motoring%20Research.com_.jpg?itok=pdcWPb7a";
   const data = {
     brands : [
       {

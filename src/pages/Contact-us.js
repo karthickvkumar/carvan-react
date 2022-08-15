@@ -3,7 +3,7 @@ import Footer from '../componenets/Footer';
 import Header from '../componenets/Header';
 
  function ContactUs() {
-    const bannerImg = require("../img/banner-image-3-1920x300.jpg");
+    const bannerImg = "https://jgu.edu.in/wp-content/uploads/2021/06/contact_banner_short.jpg";
 
   return (
     <div>
