@@ -27,7 +27,7 @@ const PreOwned = (props) => {
                       </div>
                   </div>
                   <div class="down-content">
-                      <h4 className='brand-info'>{value.model}</h4>
+                      <h4>{value.model}</h4>
 
                       <br/>
 
