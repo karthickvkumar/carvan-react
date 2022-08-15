@@ -17,8 +17,8 @@ p {
 }
 
 section {
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 
@@ -355,14 +355,14 @@ section.banner {
   left: 0; 
   right: 0; 
   bottom: 0; 
-  background-color: rgba(0,0,0,.3); 
+  background-color: rgba(0,0,0,.2); 
   z-index: 1;
   border-radius: 5px;
 }
 
 .thumb-img:before { 
   z-index: 3; 
-  background-color: rgba(0,0,0,.3); 
+  background-color: rgba(0,0,0,.2); 
 }
 
 .featured-item .thumb-img:before {  
@@ -584,7 +584,6 @@ section.banner {
   overflow: hidden;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-  height: 130px
 }
 
 .featured-places .featured-item .thumb .overlay-content {
@@ -758,7 +757,7 @@ section.our-services .service-item h4 {
   padding: 15px 20px;
   text-decoration: none;
 }
-.accordion .accordion-trigger:after {
+/* .accordion .accordion-trigger:after {
   width: 15px;
   height: 15px;
   background-color: #ddd;
@@ -771,7 +770,7 @@ section.our-services .service-item h4 {
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-}
+} */
 .accordion-content {
   margin: 0px;
   padding: 20px;
@@ -1339,4 +1338,33 @@ main > section:nth-child(even) {
 
 .user-img{
   max-width: 100%;
+}
+
+.align-center{
+  display: flex;
+  justify-content: center;
+}
+
+.zoom:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.searchIcon{
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 10px;
+  left: 30px;
+}
+
+.search-input{
+  padding-left: 40px;
+}
+
+.brand-info{
+  font-family: 'FontAwesome';
+}
+.text-button{
+  cursor: pointer;
 }
