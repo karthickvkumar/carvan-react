@@ -36,7 +36,7 @@ const SubBrands = () => {
                 <div className ="row">
                     <CarList></CarList>          
                 </div>
-                <div class="blue-button align-center">
+                <div className="blue-button align-center">
                   <a href="#">Back to Brands</a>
                 </div>
             </div>

@@ -47,7 +47,7 @@ section {
 .blue-button a {
   display: inline-block;
   background-color: #4883ff;
-  color: #fff;
+  color: #fff !important;
   font-size: 15px;
   font-weight: 500;
   padding: 10px 16px;
@@ -58,7 +58,7 @@ section {
 
 .blue-button a:hover {
   background-color: transparent;
-  color: #4883ff;
+  color: #4883ff !important;
 }
 
 

@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from '../componenets/Header';
 import Footer from '../componenets/Footer';
+import {NavLink} from "react-router-dom";
 
 const PreOwnedDetails = () => {
   const bannerImg = require("../img/blog-image-fullscren-1-1920x700.jpg");
@@ -224,7 +225,7 @@ const PreOwnedDetails = () => {
             </div>
         </section>
             <div className="blue-button align-center">
-          <a href="#">Back to PreOwned Cars</a>
+          <NavLink to="/PreownedCars">Back to PreOwned Cars</NavLink>
         </div>
     </main>
 

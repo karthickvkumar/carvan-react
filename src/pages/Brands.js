@@ -99,9 +99,6 @@ function Brands() {
                     <CarBrands {...data}></CarBrands>                    
                 </div>
             </div>
-        <div class="blue-button align-center">
-          <a href="#">View More</a>
-        </div>
         </section>
       </main>
       <Footer></Footer>

@@ -9,11 +9,11 @@ function AboutUs() {
     <div>
       <Header></Header>
       <section className="banner banner-secondary" id="top" style={{backgroundImage : `url(${bannerImg})`}}>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-10 col-md-offset-1">
-                    <div class="banner-caption">
-                        <div class="line-dec"></div>
+        <div className="container">
+            <div className="row">
+                <div className="col-md-10 col-md-offset-1">
+                    <div className="banner-caption">
+                        <div className="line-dec"></div>
                         <h2>About Us</h2>
                     </div>
                 </div>
@@ -23,11 +23,11 @@ function AboutUs() {
 
     <main>
 
-      <section class="our-services">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-7">
-                        <div class="left-content">
+      <section className="our-services">
+            <div className="container">
+                <div className="row">
+                    <div className="col-md-7">
+                        <div className="left-content">
                             <br />
                             <h4>About us</h4>
                             <p>Aenean hendrerit metus leo, quis viverra purus condimentum nec. Pellentesque a sem semper, lobortis mauris non, varius urna. Quisque sodales purus eu tellus fringilla.<br/><br/>Mauris sit amet quam congue, pulvinar urna et, congue diam. Suspendisse eu lorem massa. Integer sit amet posuere tellus, id efficitur leo. In hac habitasse platea dictumst. Vel sequi odit similique repudiandae ipsum iste, quidem tenetur id impedit, eaque et, aliquam quod.</p>
@@ -35,26 +35,26 @@ function AboutUs() {
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure cupiditate id unde quis ut maxime, accusantium aperiam consectetur saepe delectus ducimus accusamus, ad doloremque ea. Quam, suscipit quidem perspiciatis asperiores, libero cum saepe hic pariatur eos deleniti illum minima minus.</p>
                         </div>
                     </div>
-                    <div class="col-md-5">
-                        <img src={require("../img/about-1-720x480.jpg")} class="img-fluid user-img" alt="" />
+                    <div className="col-md-5">
+                        <img src={require("../img/about-1-720x480.jpg")} className="img-fluid user-img" alt="" />
                     </div>
                 </div>
             </div>
         </section>
 
         <section id="video-container">
-            <div class="video-overlay"></div>
-            <div class="video-content">
-                <div class="inner">
-                      <div class="section-heading">
+            <div className="video-overlay"></div>
+            <div className="video-content">
+                <div className="inner">
+                      <div className="section-heading">
                           <span>Lorem ipsum dolor.</span>
                           <h2>Vivamus nec vehicula felis</h2>
                       </div>
 
-                      <div class="container">
-                        <div class="row">
-                            <div class="col-lg-10 col-lg-offset-1">
-                                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi blanditiis, esse deserunt assumenda! Tempora nulla natus illum soluta quasi, nisi, in quaerat cumque corrupti ipsum impedit necessitatibus expedita minus harum, fuga id aperiam autem architecto odio. Perferendis eius possimus ex itaque tenetur saepe id quis dicta voluptas, corrupti sapiente hic!</p>
+                      <div className="container">
+                        <div className="row">
+                            <div className="col-lg-10 col-lg-offset-1">
+                                <p className="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi blanditiis, esse deserunt assumenda! Tempora nulla natus illum soluta quasi, nisi, in quaerat cumque corrupti ipsum impedit necessitatibus expedita minus harum, fuga id aperiam autem architecto odio. Perferendis eius possimus ex itaque tenetur saepe id quis dicta voluptas, corrupti sapiente hic!</p>
                             </div>
                         </div>
                       </div>

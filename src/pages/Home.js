@@ -1,6 +1,7 @@
 import React from 'react';
 import Footer from '../componenets/Footer';
 import Header from '../componenets/Header';
+import {NavLink} from "react-router-dom";
 
  function Home() {
   
@@ -34,7 +35,7 @@ import Header from '../componenets/Header';
                             <h4>About us</h4>
                             <p>Aenean hendrerit metus leo, quis viverra purus condimentum nec. Pellentesque a sem semper, lobortis mauris non, varius urna. Quisque sodales purus eu tellus fringilla.<br/><br/>Mauris sit amet quam congue, pulvinar urna et, congue diam. Suspendisse eu lorem massa. Integer sit amet posuere tellus, id efficitur leo. In hac habitasse platea dictumst. Vel sequi odit similique repudiandae ipsum iste, quidem tenetur id impedit, eaque et, aliquam quod.</p>
                             <div className ="blue-button">
-                                <a href="about-us.html">Discover More</a>
+                                <a href="#">Discover More</a>
                             </div>
 
                             <br/>
@@ -78,7 +79,7 @@ import Header from '../componenets/Header';
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim consectetur assumenda nam facere voluptatibus totam veritatis. </p>
 
                                 <div className ="text-button">
-                                    <a href="blog-details.html">Read More</a>
+                                    <a href="#">Read More</a>
                                 </div>
                             </div>
                         </div>
@@ -104,7 +105,7 @@ import Header from '../componenets/Header';
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim consectetur assumenda nam facere voluptatibus totam veritatis. </p>
 
                                 <div className ="text-button">
-                                    <a href="blog-details.html">Read More</a>
+                                    <a href="#">Read More</a>
                                 </div>
                             </div>
                         </div>
@@ -150,7 +151,7 @@ import Header from '../componenets/Header';
                       
 
                       <div className ="blue-button">
-                        <a href="#">Talk to us</a>
+                        <NavLink to="/ContactUs">Talk to us</NavLink>
                       </div>
                 </div>
             </div>
