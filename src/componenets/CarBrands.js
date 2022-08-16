@@ -2,6 +2,7 @@ import React from 'react';
 import {useNavigate} from "react-router-dom";
 
 const CarBrands = (props) => {
+  console.log(props)
   const navigate = useNavigate();
 
   const loadBrand = (brand) => {
