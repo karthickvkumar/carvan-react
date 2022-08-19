@@ -10,6 +10,7 @@ function Brands() {
   const [listOfBrand, setListOfBrand] = useState([]);
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     loadBrandsAPI();  
   },[]);
 

@@ -1,91 +1,13 @@
 import React from 'react';
 
-const CarList = () => {
-
-  const carList = [
-    {
-      model: "2014 Honda Civic",
-      price: "$18,990",
-      image: "https://cdn.autoportal.com/img/new-cars-gallery/honda/jazz/colors/8070d2c2b744fd319503ac1ba10dde5f.jpg"
-    },
-    {
-      model: "2012 Honda Civic",
-      price: "$15,990",
-      image: "https://cdn.autoportal.com/img/new-cars-gallery/honda/wrv/colors/a5b70b20e9d2ecb7849a2e4cb2a92f79.jpg"
-    },
-    {
-      model: "2016 Honda Civic",
-      price: "$20,990",
-      image: "https://m.economictimes.com/thumb/msid-79933399,width-1200,height-900,resizemode-4,imgsize-97551/honda-civic-1.jpg"
-    },
-    {
-      model: "2014 Honda Civic",
-      price: "$18,990",
-      image: "https://cdn.autoportal.com/img/new-cars-gallery/honda/jazz/colors/8070d2c2b744fd319503ac1ba10dde5f.jpg"
-    },
-    {
-      model: "2012 Honda Civic",
-      price: "$15,990",
-      image: "https://cdn.autoportal.com/img/new-cars-gallery/honda/wrv/colors/a5b70b20e9d2ecb7849a2e4cb2a92f79.jpg"
-    },
-    {
-      model: "2016 Honda Civic",
-      price: "$20,990",
-      image: "https://m.economictimes.com/thumb/msid-79933399,width-1200,height-900,resizemode-4,imgsize-97551/honda-civic-1.jpg"
-    },
-    {
-      model: "2014 Honda Civic",
-      price: "$18,990",
-      image: "https://cdn.autoportal.com/img/new-cars-gallery/honda/jazz/colors/8070d2c2b744fd319503ac1ba10dde5f.jpg"
-    },
-    {
-      model: "2012 Honda Civic",
-      price: "$15,990",
-      image: "https://cdn.autoportal.com/img/new-cars-gallery/honda/wrv/colors/a5b70b20e9d2ecb7849a2e4cb2a92f79.jpg"
-    },
-    {
-      model: "2016 Honda Civic",
-      price: "$20,990",
-      image: "https://m.economictimes.com/thumb/msid-79933399,width-1200,height-900,resizemode-4,imgsize-97551/honda-civic-1.jpg"
-    },
-    {
-      model: "2014 Honda Civic",
-      price: "$18,990",
-      image: "https://cdn.autoportal.com/img/new-cars-gallery/honda/jazz/colors/8070d2c2b744fd319503ac1ba10dde5f.jpg"
-    },
-    {
-      model: "2012 Honda Civic",
-      price: "$15,990",
-      image: "https://cdn.autoportal.com/img/new-cars-gallery/honda/wrv/colors/a5b70b20e9d2ecb7849a2e4cb2a92f79.jpg"
-    },
-    {
-      model: "2016 Honda Civic",
-      price: "$20,990",
-      image: "https://m.economictimes.com/thumb/msid-79933399,width-1200,height-900,resizemode-4,imgsize-97551/honda-civic-1.jpg"
-    },
-    {
-      model: "2014 Honda Civic",
-      price: "$18,990",
-      image: "https://cdn.autoportal.com/img/new-cars-gallery/honda/jazz/colors/8070d2c2b744fd319503ac1ba10dde5f.jpg"
-    },
-    {
-      model: "2012 Honda Civic",
-      price: "$15,990",
-      image: "https://cdn.autoportal.com/img/new-cars-gallery/honda/wrv/colors/a5b70b20e9d2ecb7849a2e4cb2a92f79.jpg"
-    },
-    {
-      model: "2016 Honda Civic",
-      price: "$20,990",
-      image: "https://m.economictimes.com/thumb/msid-79933399,width-1200,height-900,resizemode-4,imgsize-97551/honda-civic-1.jpg"
-    },
-  ];
+const CarList = (props) => {
 
   return (
     <div>
       {
-        carList.map((value, index) => {
+        props.cars.map((value, index) => {
           return(
-            <div className ="col-md-4 col-sm-6 col-xs-12" key={index}>
+            <div className ="col-md-4 col-sm-6 col-xs-12" key={index} id={value.brand+index}>
               <div className ="featured-item">
                   <div className ="thumb">
                       <div className ="thumb-img">

@@ -1,10 +1,35 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import CarList from '../componenets/CarList';
 import Footer from '../componenets/Footer';
 import Header from '../componenets/Header';
+import { useParams, NavLink } from 'react-router-dom';
+
+import axios from 'axios';
 
 const SubBrands = () => {
   const bannerImg = require("../img/blog-image-fullscren-1-1920x700.jpg");
+
+  const {brand} = useParams();
+
+  const [listOfSubBrand, setlistOfSubBrand] = useState([]);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    loadSubBrandsAPI();  
+  },[]);
+
+  const loadSubBrandsAPI = () =>{
+    const url = "http://localhost:9000/sub-brands";
+
+    axios.post(url, { brand })
+      .then((response) => {
+        const result = response.data;
+        setlistOfSubBrand(result);
+      })
+      .catch((error) => {
+        console.log(error)
+      })
+  }
 
   return (
     <div>
@@ -34,10 +59,10 @@ const SubBrands = () => {
                     </div> 
                 </div> 
                 <div className ="row">
-                    <CarList></CarList>          
+                    <CarList {...{cars : listOfSubBrand}}></CarList>          
                 </div>
                 <div className="blue-button align-center">
-                  <a href="#">Back to Brands</a>
+                  <NavLink to="/Brands">Back to Brands</NavLink>
                 </div>
             </div>
         </section>
