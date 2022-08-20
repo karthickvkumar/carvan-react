@@ -53,7 +53,7 @@ function Brands() {
                     </div> 
                 </div> 
                 <div className ="row">
-                    <CarBrands {...{brands : listOfBrand}}></CarBrands>                    
+                    <CarBrands brands={listOfBrand} ></CarBrands>                    
                 </div>
             </div>
         </section>

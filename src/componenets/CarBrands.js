@@ -17,7 +17,7 @@ const CarBrands = (props) => {
                 <div className ="featured-item">
                     <div className ="thumb">
                         <div className ="thumb-img">
-                            <img src={value.image} alt="" style={{maxHeight: '125px'}} />
+                            <img src={value.image} alt=""  />
                         </div>
                     </div>
                     <div className="down-content">

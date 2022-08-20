@@ -48,7 +48,7 @@ import axios from 'axios';
             <div className ="container">
               <h3>Shop Great Values</h3>
                 <div className ="row">
-                    <CarBrands {...{brands : listOfRange}}></CarBrands> 
+                    <CarBrands brands={listOfRange}></CarBrands> 
                 </div>
             </div>
         </section>

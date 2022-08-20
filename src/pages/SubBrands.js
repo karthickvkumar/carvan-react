@@ -59,7 +59,7 @@ const SubBrands = () => {
                     </div> 
                 </div> 
                 <div className ="row">
-                    <CarList {...{cars : listOfSubBrand}}></CarList>          
+                    <CarList cars={listOfSubBrand}></CarList>          
                 </div>
                 <div className="blue-button align-center">
                   <NavLink to="/Brands">Back to Brands</NavLink>

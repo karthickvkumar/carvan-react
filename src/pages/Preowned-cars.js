@@ -46,7 +46,7 @@ import axios from 'axios';
       <section className ="featured-places">
             <div className ="container">
                 <div className ="row">
-                    <PreOwned {...{cars: listOfPreOwned}}></PreOwned>
+                    <PreOwned cars={listOfPreOwned}></PreOwned>
                 </div>
             </div>
         </section>
