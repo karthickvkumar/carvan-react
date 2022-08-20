@@ -1,10 +1,16 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import Header from '../componenets/Header';
 import Footer from '../componenets/Footer';
-import {NavLink} from "react-router-dom";
+import {NavLink, useLocation} from "react-router-dom";
 
 const PreOwnedDetails = () => {
   const bannerImg = require("../img/blog-image-fullscren-1-1920x700.jpg");
+  const {state} = useLocation();
+  
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  },[]);
+
 
   return (
     <div>
@@ -32,14 +38,14 @@ const PreOwnedDetails = () => {
                <div className="row">
                   <div className="col-md-6 col-xs-12">
                     <div>
-                      <img src={require("../img/product-1-720x480.jpg")} alt="" className="img-responsive wc-image"/>
+                      <img src={state.image} alt="" className="img-responsive wc-image"/>
                     </div>
                     
                   </div>
 
                   <div className="col-md-6 col-xs-12">
                     <form action="#" method="post" className="form">
-                      <h2><small><del className='brand-info'> $11999.00</del></small><strong className="text-primary brand-info">$11779.00</strong></h2>
+                      <h2><small><del className='brand-info'>$ {state.actual_price}</del></small><strong className="text-primary brand-info">$ {state.discount_price}</strong></h2>
 
                       <br/> 
 
@@ -56,7 +62,7 @@ const PreOwnedDetails = () => {
                             <div className="clearfix">
                                  <span className="pull-left"> Model</span>
 
-                                 <strong className="pull-right">Lorem ipsum dolor sit</strong>
+                                 <strong className="pull-right">{state.model}</strong>
                             </div>
                        </li>
 
@@ -64,7 +70,7 @@ const PreOwnedDetails = () => {
                             <div className="clearfix">
                                  <span className="pull-left">First registration</span>
 
-                                 <strong className="pull-right">05/2010</strong>
+                                 <strong className="pull-right">{state.year} </strong>
                             </div>
                        </li>
 
@@ -72,7 +78,7 @@ const PreOwnedDetails = () => {
                             <div className="clearfix">
                                  <span className="pull-left">Mileage</span>
 
-                                 <strong className="pull-right">5000 km</strong>
+                                 <strong className="pull-right">{state.km} km</strong>
                             </div>
                        </li>
 
@@ -80,7 +86,7 @@ const PreOwnedDetails = () => {
                             <div className="clearfix">
                                  <span className="pull-left">Fuel</span>
 
-                                 <strong className="pull-right">Diesel</strong>
+                                 <strong className="pull-right">{state.fuel_type}</strong>
                             </div>
                        </li>
 
@@ -88,7 +94,7 @@ const PreOwnedDetails = () => {
                             <div className="clearfix">
                                  <span className="pull-left">Engine size</span>
 
-                                 <strong className="pull-right">1800 cc</strong>
+                                 <strong className="pull-right">{state.cc} cc</strong>
                             </div>
                        </li>
 
@@ -96,7 +102,7 @@ const PreOwnedDetails = () => {
                             <div className="clearfix">
                                  <span className="pull-left">Power</span>
 
-                                 <strong className="pull-right">85 hp</strong>
+                                 <strong className="pull-right">{state.hp} hp</strong>
                             </div>
                        </li>
 
@@ -105,7 +111,7 @@ const PreOwnedDetails = () => {
                             <div className="clearfix">
                                  <span className="pull-left">Gearbox</span>
 
-                                 <strong className="pull-right">Manual</strong>
+                                 <strong className="pull-right">{state.gear}</strong>
                             </div>
                        </li>
 

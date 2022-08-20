@@ -5,8 +5,8 @@ const PreOwned = (props) => {
 
   const navigate = useNavigate();
 
-  const loadCarDetail = (id) => {
-    navigate(`/PreownedCars/${id}`);
+  const loadCarDetail = (value) => {
+    navigate(`/PreownedCars/${value.id}`, {state: value});
   }
 
   return (
@@ -35,7 +35,7 @@ const PreOwned = (props) => {
 
                       <p><span><del className='brand-info'><sup>$</sup>{value.actual_price}</del> <strong className='brand-info'><sup>$</sup>{value.discount_price}</strong></span></p>
 
-                      <div className="text-button" onClick={() => loadCarDetail(value.id)}>
+                      <div className="text-button" onClick={() => loadCarDetail(value)}>
                           <a>View More</a>
                       </div>
                   </div>

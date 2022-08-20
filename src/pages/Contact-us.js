@@ -6,12 +6,23 @@ import axios from 'axios';
  function ContactUs() {
   const bannerImg = "https://jgu.edu.in/wp-content/uploads/2021/06/contact_banner_short.jpg";
 
+  const [contactForm, setContactForm] = useState({
+    name: "",
+    subject: "",
+    message: ""
+  });
+
+  const onHandleInput = (event) => {
+    setContactForm(...{contactForm, [event.target.name] : event.target.value})
+  }
+
   const submitContact = () =>{
     const url = "http://localhost:9000/submit";
 
-    axios.post(url, { })
+    axios.post(url, contactForm)
       .then((response) => {
         const result = response.data;
+        alert(result.message);
       })
       .catch((error) => {
         console.log(error)
@@ -44,23 +55,23 @@ import axios from 'axios';
                                 <div className ="row">
                                     <div className ="col-md-6">
                                       <fieldset>
-                                        <input name="name" type="text" className ="form-control" id="name" placeholder="Your name..." required=""/>
+                                        <input name="name" type="text" className ="form-control" id="name" placeholder="Your name..." required="" onChange={onHandleInput}/>
                                       </fieldset>
                                     </div>
                                      <div className ="col-md-6">
                                       <fieldset>
-                                        <input name="subject" type="text" className="form-control" id="subject" placeholder="Subject..." required=""/>
+                                        <input name="subject" type="text" className="form-control" id="subject" placeholder="Subject..." required="" onChange={onHandleInput}/>
                                       </fieldset>
                                     </div>
                                     <div className ="col-md-12">
                                       <fieldset>
-                                        <textarea name="message" rows="6" className ="form-control" id="message" placeholder="Your message..." required=""></textarea>
+                                        <textarea name="message" rows="6" className ="form-control" id="message" placeholder="Your message..." required="" onChange={onHandleInput}></textarea>
                                       </fieldset>
                                     </div>
                                     <div className ="col-md-12">
                                       <fieldset>
                                         <div className ="blue-button">
-                                            <a href="#" id="form-submit" className ="btn">Send Message</a>
+                                            <a onClick={() => submitContact()} id="form-submit" className ="btn">Send Message</a>
                                         </div>
                                       </fieldset>
                                     </div>
