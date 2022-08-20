@@ -1,9 +1,22 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Footer from '../componenets/Footer';
 import Header from '../componenets/Header';
+import axios from 'axios';
 
  function ContactUs() {
-    const bannerImg = "https://jgu.edu.in/wp-content/uploads/2021/06/contact_banner_short.jpg";
+  const bannerImg = "https://jgu.edu.in/wp-content/uploads/2021/06/contact_banner_short.jpg";
+
+  const submitContact = () =>{
+    const url = "http://localhost:9000/submit";
+
+    axios.post(url, { })
+      .then((response) => {
+        const result = response.data;
+      })
+      .catch((error) => {
+        console.log(error)
+      })
+  }
 
   return (
     <div>

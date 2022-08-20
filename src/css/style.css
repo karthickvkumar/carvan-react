@@ -337,6 +337,7 @@ section.banner {
 
 .thumb-img { 
   position: relative; 
+  height: 226px;
 }
 
 .thumb-img img { 
